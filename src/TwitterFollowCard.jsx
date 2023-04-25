@@ -26,7 +26,9 @@ export const TwitterFollowCard = ({userName = 'unknown', name, isFollow, formatU
         <p style={{display: isFollow? 'inherit': 'none'}}>Follow</p>
       <aside>
         <button onClick={() => setState(prevStateValue => !prevStateValue)} className={buttonClassName}>
-          {text}
+          {/* {text} */}
+          <span className="tw-followCard-text">{text}</span>
+          <span className="tw-followCard-stopFollow">Dejar de seguir</span>
         </button>
       </aside>
     </article>
